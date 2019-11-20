@@ -1,11 +1,14 @@
-<h1 mat-dialog-title>Hi {{data.name}}</h1>
+<h1 mat-dialog-title>{{ data.titulo }}</h1>
 <div mat-dialog-content>
-  <p>What's your favorite animal?</p>
   <mat-form-field>
-    <input matInput >
+    <input matInput placeholder="Codigo">
   </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Nome">
+  </mat-form-field>
+  <button mat-flat-button color="primary" (click)="pesquisa()">
+    <span *ngIf="!pesquisando">Pesquisar</span>
+    <img *ngIf="pesquisando" style="height: 26px;" src="../../../assets/vT8DJ.gif" alt="Gif loading">
+  </button>
 </div>
-<div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">No Thanks</button>
-  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
-</div>
+

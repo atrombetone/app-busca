@@ -9,6 +9,7 @@ import { ContasComponent } from './pages/contas/contas.component';
 import { ColaboradoresComponent } from './pages/colaboradores/colaboradores.component';
 import { EmpresaComponent } from './pages/empresa/empresa.component';
 import { DialogFormComponent } from './components/dialog-form/dialog-form.component';
+import { ButtonDialogComponent } from './components/button-dialog/button-dialog.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DialogFormComponent } from './components/dialog-form/dialog-form.compon
     ContasComponent,
     ColaboradoresComponent,
     EmpresaComponent,
-    DialogFormComponent
+    DialogFormComponent,
+    ButtonDialogComponent
   ],
   entryComponents: [
     DialogFormComponent
